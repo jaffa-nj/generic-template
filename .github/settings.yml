@@ -7,6 +7,7 @@ settings:
 
 labels:
   # Useful to blow out a lot of standard labels and make busy PR / Issue screens easier on eyes
+  # Colors can be researched at https://hexcolor16.com
   - name: bug
     description: Bug identified
     color: D73A4A
