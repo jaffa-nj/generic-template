@@ -50,6 +50,6 @@ jobs:
         uses: actuarysailor/gha-repo-manager@v2.2.3
         with:
           repo: ${{ matrix.repo }}
-          action: 'check'
+          action: 'apply'
           settings_file: ${{ matrix.settings_file }}
           token: ${{ github.token }}
