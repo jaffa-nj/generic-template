@@ -26,6 +26,6 @@ jobs:
         with:
           token: ${{ github.token }}
           # only needed if you want these files loaded from a branch other than the default branch
-          target-branch: main 
+          target-branch: main
           manifest-file: .github/.release-please-manifest.json
           config-file: .github/release-please-config.json
