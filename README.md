@@ -204,6 +204,10 @@ Don't forget to give the project a star! Thanks again!
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
+<!-- 
+High level summaries of various licenses may be found here:
+https://dev.to/buildwebcrumbs/explain-like-im-five-licenses-for-open-source-projects-16ob
+-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,6 +234,76 @@ Use this space to list resources you find helpful and would like to give credit 
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
+
+### Workflows
+
+#### repo-maint.yml
+
+* **File Path:** [`.github/workflows/repo-maint.yml`](.github/workflows/repo-maint.yml)
+
+* **Referenced Actions:**
+  * **[tiacsys/clean-after-action](https://github.com/tiacsys/clean-after-action)**
+    * **Summary:** Cleans up the workspace after the action runs.
+  * **[actions/stale](https://github.com/actions/stale)**
+    * **Summary:** Marks issues and pull requests as stale after a period of inactivity and closes them if no further activity occurs.
+  * **[dessant/lock-threads](https://github.com/dessant/lock-threads)**
+    * **Summary:** Locks issues and pull requests that have been closed for a specified period to prevent further comments.
+
+#### repo-config.yml
+
+* **File Path:** [`.github/workflows/repo-config.yml`](.github/workflows/repo-config.yml)
+
+* **Referenced Actions:**
+  * **[tiacsys/clean-after-action](https://github.com/tiacsys/clean-after-action)**
+    * **Summary:** Cleans up the workspace after the action runs.
+  * **[actions/checkout](https://github.com/actions/checkout)**
+    * **Summary:** Checks out the repository so the workflow can access it.
+  * **[actuarysailor/gha-repo-manager](https://github.com/actuarysailor/gha-repo-manager)**
+    * **Summary:** Manages repository settings based on a configuration file.
+
+#### release.yml
+
+* **File Path:** [`.github/workflows/release.yml`](.github/workflows/release.yml)
+
+* **Referenced Actions:**
+  * **[tiacsys/clean-after-action](https://github.com/tiacsys/clean-after-action)**
+    * **Summary:** Cleans up the workspace after the action runs.
+  * **[actions/checkout](https://github.com/actions/checkout)**
+    * **Summary:** Checks out the repository so the workflow can access it.
+  * **[googleapis/release-please-action](https://github.com/googleapis/release-please-action)**
+    * **Summary:** Automates the release process by creating release pull requests.
+
+#### pr-controls.yml
+
+* **File Path:** [`.github/workflows/pr-controls.yml`](.github/workflows/pr-controls.yml)
+
+* **Referenced Actions:**
+  * **[tiacsys/clean-after-action](https://github.com/tiacsys/clean-after-action)**
+    * **Summary:** Cleans up the workspace after the action runs.
+  * **[amannn/action-semantic-pull-request](https://github.com/amannn/action-semantic-pull-request)**
+    * **Summary:** Ensures pull request titles follow conventional commit guidelines.
+  * **[actions/labeler](https://github.com/actions/labeler)**
+    * **Summary:** Automatically labels pull requests based on the files they modify.
+  * **[codelytv/pr-size-labeler](https://github.com/codelytv/pr-size-labeler)**
+    * **Summary:** Labels pull requests based on their size to help reviewers prioritize.
+
+#### pre-commit.ci GitHub App
+
+The [pre-commit.ci](https://pre-commit.ci/) GitHub App is a powerful tool for automating code linting and formatting in your projects. By using a `.pre-commit-config.yaml` file in your repository, you can configure various hooks for different project types to ensure consistent code quality.
+
+To set up pre-commit.ci on your local machine, follow these steps:
+
+1. Install the pre-commit package by running `pip install pre-commit` in your project's root directory.
+2. Create a `.pre-commit-config.yaml` file in your repository's root directory.
+3. Configure the hooks you want to use in the `.pre-commit-config.yaml` file. For example, you can include hooks for code linting, formatting, and spell checking.
+4. Commit the `.pre-commit-config.yaml` file to your repository.
+5. Install the pre-commit hooks by running `pre-commit install` in your project's root directory.
+6. Now, every time you commit changes to your repository, pre-commit.ci will automatically run the configured hooks and provide feedback on any issues found.
+
+Similarly, you can install [pre-commit.ci](https://github.com/marketplace/pre-commit-ci) into your GitHub account or organization to have it automatically perform the tasks
+defined in the `.pre-commit-config.yaml` for each and every pull-request.
+
+By using pre-commit.ci, you can ensure that your code follows best practices and maintain consistent code quality across your team.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
