@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - '.github/settings.yml'
-      - '.github/workflows/repo-gov.yml'
+      - '.github/workflows/repo-config.yml'
 
   schedule:
     # Everyday @ 0000 - https://crontab.cronhub.io/
