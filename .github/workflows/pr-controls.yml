@@ -1,13 +1,13 @@
 name: 'Controls to Standardize Pull Requests'
 
 on:
-  push:
+  pull_request:
     paths:
       - '.github/workflows/pr-controls.yml'
   # Note, pull_request_target is used to ensure that the action runs
   # with the permissions and secrets defined in the repository
   # however, if this workflow is updated in source branch or fork, it will run the current definition
-  # in the target branch.  We use the push above to validate the changes to the new definition.
+  # in the target branch.  We use the pull_request above to validate the changes to the new definition.
   # https://stackoverflow.com/questions/74957218/what-is-the-difference-between-pull-request-and-pull-request-target-event-in-git
   pull_request_target:
     types:
